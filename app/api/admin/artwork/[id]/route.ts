@@ -1,0 +1,3 @@
+import {identity,json,noStore} from '@/lib/commerce';
+import {env} from 'cloudflare:workers';
+export async function GET(_:Request,{params}:{params:Promise<{id:string}>}){const u=await identity();if(!u?.admin)return json({error:'Admin access required.'},403);const {id}=await params;if(!/^[a-f0-9-]{36}$/i.test(id))return json({error:'Not found.'},404);const object=await env.BUCKET?.get('designs/'+id);if(!object)return json({error:'Artwork not found.'},404);return new Response(object.body,{headers:{...noStore,'Content-Type':object.httpMetadata?.contentType||'application/octet-stream','Content-Disposition':'inline','X-Content-Type-Options':'nosniff'}})}

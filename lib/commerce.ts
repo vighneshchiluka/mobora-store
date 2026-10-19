@@ -1,0 +1,14 @@
+import {env} from 'cloudflare:workers';
+import {getChatGPTUser} from '@/app/chatgpt-auth';
+import {getDb} from '@/db';
+import {orders,orderEvents} from '@/db/schema';
+import {eq,and} from 'drizzle-orm';
+export const noStore={'Cache-Control':'no-store'};
+export function json(data:unknown,status=200){return Response.json(data,{status,headers:noStore})}
+export function sameOrigin(r:Request){return r.headers.get('origin')===new URL(r.url).origin}
+export async function identity(){const u=await getChatGPTUser();return u?{...u,admin:(env.ADMIN_EMAILS||'').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean).includes(u.email.toLowerCase())}:null}
+export function paymentReady(){return env.PAYMENTS_ENABLED==='true'&&!!env.RAZORPAY_KEY_ID&&!!env.RAZORPAY_KEY_SECRET&&/^\d+$/.test(env.SHIPPING_PAISE||'')}
+export function shippingPaise(){return /^\d+$/.test(env.SHIPPING_PAISE||'')?Math.min(Number(env.SHIPPING_PAISE),100000):0}
+export async function razorpay(path:string,body?:unknown){if(!env.RAZORPAY_KEY_ID||!env.RAZORPAY_KEY_SECRET)throw Error('Payment gateway is not connected.');const response=await fetch('https://api.razorpay.com/v1/'+path,{method:body?'POST':'GET',headers:{Authorization:'Basic '+btoa(env.RAZORPAY_KEY_ID+':'+env.RAZORPAY_KEY_SECRET),'Content-Type':'application/json'},...(body?{body:JSON.stringify(body)}:{}),signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error('The payment gateway is unavailable. Please retry from My orders.');return response.json() as Promise<Record<string,any>>}
+export async function verifyHmac(secret:string,message:string,signature:string){if(!/^[a-f0-9]{64}$/i.test(signature))return false;const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(secret),{name:'HMAC',hash:'SHA-256'},false,['verify']);return crypto.subtle.verify('HMAC',key,Uint8Array.from(signature.match(/../g)!,s=>parseInt(s,16)),new TextEncoder().encode(message))}
+export async function reconcileOrder(order:typeof orders.$inferSelect){if(!order.gatewayOrder||order.paymentStatus==='paid'||!env.RAZORPAY_KEY_SECRET)return order;const result=await razorpay('orders/'+encodeURIComponent(order.gatewayOrder)+'/payments');const payment=(result.items||[]).find((p:any)=>p.status==='captured'&&p.order_id===order.gatewayOrder&&p.currency==='INR'&&p.amount===order.amount);if(!payment)return order;const now=new Date().toISOString();const db=getDb();const status=order.status==='cancelled'?'payment_review':'confirmed';const changed=await db.update(orders).set({paymentStatus:'paid',paymentId:payment.id,status,updated:now}).where(and(eq(orders.id,order.id),eq(orders.paymentStatus,order.paymentStatus))).returning();if(changed.length)await db.insert(orderEvents).values({id:crypto.randomUUID(),orderId:order.id,status,note:'Payment captured and verified with Razorpay.',created:now});return changed[0]||order}
