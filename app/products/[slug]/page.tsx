@@ -1,5 +1,5 @@
 import ThemeToggle from '@/components/theme-toggle';
-import Link from 'next/link';
+import Link from '@/components/site-link';
 import {notFound} from 'next/navigation';
 import {products} from '@/lib/catalog';
 import {Phone} from '@/components/storefront';

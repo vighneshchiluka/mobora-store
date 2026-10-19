@@ -1,7 +1,7 @@
 'use client';
 import {useEffect,useState} from 'react';
 import {Heart,UserRound} from 'lucide-react';
-import Link from 'next/link';
+import Link from '@/components/site-link';
 import ThemeToggle from './theme-toggle';
 import {products} from '@/lib/catalog';
 let ids:string[]=[],started=false,signedIn=false;

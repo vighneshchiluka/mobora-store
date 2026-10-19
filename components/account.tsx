@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useState,FormEvent} from 'react';
-import Link from 'next/link';
+import Link from '@/components/site-link';
 import {UserRound,Package,Heart,ArrowUpRight,ShieldCheck} from 'lucide-react';
 import ShopShell from './shop-shell';
 type Account={user:null|{name:string;email:string;admin:boolean};profile:null|{name:string;phone:string}};

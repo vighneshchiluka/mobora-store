@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Link from '@/components/site-link';
 import {Heart,ArrowUpRight} from 'lucide-react';
 import {products} from '@/lib/catalog';
 import {Phone} from './storefront';

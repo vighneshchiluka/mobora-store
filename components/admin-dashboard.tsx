@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useState,FormEvent} from 'react';
-import Link from 'next/link';
+import Link from '@/components/site-link';
 import ThemeToggle from './theme-toggle';
 import {LayoutDashboard,Package,Users,MessageSquare,ArrowUpRight,RefreshCw,Search,Wallet,Clock,Truck,ChevronRight} from 'lucide-react';
 import {money} from './checkout';

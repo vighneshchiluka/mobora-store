@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/site-link';
 import {ShoppingBag,ArrowLeft} from 'lucide-react';
 import {CommerceActions} from './wishlist';
 export default function ShopShell({children}:{children:React.ReactNode}){return <div className="commerce-app"><div className="announcement">Made personal. Made for your everyday. ✳</div><header className="commerce-header"><Link className="logo" href="/">MOBORA<span>✳</span></Link><nav><Link href="/mobile-cover">Covers</Link><Link href="/accessories">Accessories</Link></nav><div className="header-actions"><CommerceActions/><Link aria-label="Your bag" href="/checkout"><ShoppingBag size={20}/></Link></div></header><main className="commerce-main">{children}</main><footer className="commerce-footer"><Link href="/mobile-cover"><ArrowLeft size={15}/> Back to the collection</Link><span>MOBORA · Mumbai · Made personal.</span><Link href="/privacy">Privacy</Link><Link href="/admin">Admin</Link></footer></div>}

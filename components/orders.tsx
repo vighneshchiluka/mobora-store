@@ -1,6 +1,6 @@
 'use client';
 import {useState,useEffect} from 'react';
-import Link from 'next/link';
+import Link from '@/components/site-link';
 import {Package,RefreshCw,Truck,ArrowRight} from 'lucide-react';
 import ShopShell from './shop-shell';
 import {money} from './checkout';

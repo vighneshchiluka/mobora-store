@@ -1,6 +1,6 @@
 'use client';
 import {useState,useEffect,FormEvent} from 'react';
-import Link from 'next/link';
+import Link from '@/components/site-link';
 import {ShoppingBag,LockKeyhole,ArrowRight,Check,Trash2} from 'lucide-react';
 import ShopShell from './shop-shell';
 import {products} from '@/lib/catalog';
