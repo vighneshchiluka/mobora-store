@@ -1,0 +1,350 @@
+{
+  "reviewed": "2026-10-19",
+  "note": "Original illustrative geometry researched from online manufacturer references. Not manufacturing templates.",
+  "entries": [
+    {
+      "layout": "asus-rog3",
+      "source": "https://rog.asus.com/phones/rog-phone-3-model/",
+      "models": [
+        "Asus Rog 3"
+      ]
+    },
+    {
+      "layout": "asus-flip",
+      "source": "https://www.asus.com/us/mobile-handhelds/phones/zenfone/zenfone-6/techspec/",
+      "models": [
+        "Asus Zenfone 6Z"
+      ]
+    },
+    {
+      "layout": "dual-left-fingerprint",
+      "source": "https://www.asus.com/event/2019/productguide/ph/ZenFone-Max-Pro-M2_Q4-2018-Product-Guide.pdf",
+      "models": [
+        "Asus Zenfone 5Z",
+        "Asus Zenfone Max Pro M1 Zb601Kl",
+        "Asus Zenfone Max Pro M2"
+      ]
+    },
+    {
+      "layout": "motorola-edge30-pro",
+      "source": "https://help.motorola.com/hc/7130/13/global/en-us/CGT2002173049.html",
+      "models": [
+        "Motorola Edge 30 Pro"
+      ]
+    },
+    {
+      "layout": "hmd-crest-max",
+      "source": "https://www.hmd.com/en_in/hmd-crest-max",
+      "models": [
+        "HMD Crest Max (5G)"
+      ]
+    },
+    {
+      "layout": "nothing-dual",
+      "source": "https://us.nothing.tech/pages/phone-1",
+      "models": [
+        "Nothing Phone 1"
+      ]
+    },
+    {
+      "layout": "nothing-center-dual",
+      "source": "https://nl.nothing.tech/pages/phone-2a",
+      "models": [
+        "Nothing Phone 2A"
+      ]
+    },
+    {
+      "layout": "nokia-circle-fingerprint",
+      "source": "https://www.hmd.com/ar_ae/support/nokia-7-2-user-guide/keys-and-parts",
+      "models": [
+        "Nokia 7.2"
+      ]
+    },
+    {
+      "layout": "center-circle-horizontal",
+      "source": "https://community.oneplus.com/thread/1117753",
+      "models": [
+        "OnePlus 7T"
+      ]
+    },
+    {
+      "layout": "dual-center-fingerprint",
+      "source": "https://service.oneplus.com/content/dam/support/user-manuals/common/OnePlus_6_User_Manual_EN.pdf",
+      "models": [
+        "OnePlus 6"
+      ]
+    },
+    {
+      "layout": "dual-center",
+      "source": "https://community.oneplus.com/thread/933985",
+      "models": [
+        "OnePlus 6T"
+      ]
+    },
+    {
+      "layout": "center-triple-flash-below",
+      "source": "https://www.oneplus.com/7pro",
+      "models": [
+        "OnePlus 7 Pro"
+      ]
+    },
+    {
+      "layout": "center-triple-flash-below",
+      "source": "https://www.oneplus.com/us/8",
+      "models": [
+        "OnePlus 8"
+      ]
+    },
+    {
+      "layout": "quad-left-fingerprint",
+      "source": "https://www.realme.com/sg/realme-5-pro/specs",
+      "models": [
+        "Realme 5 Pro"
+      ]
+    },
+    {
+      "layout": "quad-left-fingerprint",
+      "source": "https://www.realme.com/global/realme-5i/specs",
+      "models": [
+        "Realme 5I"
+      ]
+    },
+    {
+      "layout": "quad-left-fingerprint",
+      "source": "https://www.realme.com/in/realme-5s",
+      "models": [
+        "Realme 5S"
+      ]
+    },
+    {
+      "layout": "quad-vertical",
+      "source": "https://www.realme.com/in/realme-6",
+      "models": [
+        "Realme 6"
+      ]
+    },
+    {
+      "layout": "quad-vertical",
+      "source": "https://www.realme.com/in/realme-7",
+      "models": [
+        "Realme 7"
+      ]
+    },
+    {
+      "layout": "dual-left-fingerprint",
+      "source": "https://www.mi.com/uk/redmi-note-7/specs/",
+      "models": [
+        "Redmi Note 7"
+      ]
+    },
+    {
+      "layout": "dual-left-flash-between",
+      "source": "https://www.mi.com/in/redmi-note-5-pro",
+      "models": [
+        "Redmi Note 5 Pro"
+      ]
+    },
+    {
+      "layout": "quad-center-side-fingerprint",
+      "source": "https://www.mi.com/in/redmi-note-8-pro/",
+      "models": [
+        "Redmi Note 8 Pro"
+      ]
+    },
+    {
+      "layout": "triple-left-pill",
+      "source": "https://news.samsung.com/ar/samsung-renueva-integramente-su-portfolio-con-la-nueva-familia-galaxy-a",
+      "models": [
+        "Galaxy A50",
+        "Galaxy A70"
+      ]
+    },
+    {
+      "layout": "s10-horizontal",
+      "source": "https://www.samsung.com/ch/support/mobile-devices/wie-sind-die-kameras-des-galaxy-s10-plus-s10e-aufgebaut/",
+      "models": [
+        "Galaxy S10",
+        "Galaxy S10 Plus"
+      ]
+    },
+    {
+      "layout": "triple-left-pill",
+      "source": "https://www.vivo.com/en/products/v15pro",
+      "models": [
+        "Vivo V15 Pro"
+      ]
+    },
+    {
+      "layout": "dual-horizontal-fingerprint",
+      "source": "https://www.oppo.com/ae/newsroom/press/futuristic-flagship-oppo-find-x-makes-regional-debut/",
+      "models": [
+        "Oppo F9"
+      ]
+    },
+    {
+      "layout": "dual-horizontal-fingerprint",
+      "source": "https://www.mi.co.id/id/mi-a1/",
+      "models": [
+        "Xiaomi Mi A1"
+      ]
+    },
+    {
+      "layout": "dual-left-flash-between",
+      "source": "https://www.mi.com/in/mi-a2/",
+      "models": [
+        "Xiaomi Mi A2"
+      ]
+    },
+    {
+      "layout": "ai-nova2",
+      "source": "https://aiplusstore.com/products/ai-nova-2-5g",
+      "models": [
+        "Ai+ Nova 2 (5G)"
+      ]
+    },
+    {
+      "layout": "ai-nova2-pro",
+      "source": "https://aiplusstore.com/products/ai-nova-2-pro-5g",
+      "models": [
+        "Ai+ Nova 2 Pro (5G)"
+      ]
+    },
+    {
+      "layout": "ai-nova2-neo",
+      "source": "https://aiplusstore.com/products/ai-nova-2-neo-5g",
+      "models": [
+        "Ai+ Nova 2 Neo (5G)"
+      ]
+    },
+    {
+      "layout": "ai-nova2-ultra",
+      "source": "https://aiplusstore.com/products/ai-nova-2-ultra-5g",
+      "models": [
+        "Ai+ Nova 2 Ultra (5G)"
+      ]
+    },
+    {
+      "layout": "ai-pulse2",
+      "source": "https://aiplusstore.com/products/ai-pulse-2",
+      "models": [
+        "Ai+ Pulse 2 (4G)"
+      ]
+    },
+    {
+      "layout": "hmd-crest",
+      "source": "https://www.hmd.com/en_int/hmd-crest",
+      "models": [
+        "HMD Crest (5G)"
+      ]
+    },
+    {
+      "layout": "iqoo-neo9pro",
+      "source": "https://www.iqoo.com/in/products/picture/neo9pro",
+      "models": [
+        "iQOO Neo 9 Pro (5G)"
+      ]
+    },
+    {
+      "layout": "lava-agni2",
+      "source": "https://shop.lavamobiles.com/products/agni2",
+      "models": [
+        "Lava Agni 2 (5G)"
+      ]
+    },
+    {
+      "layout": "honor8x",
+      "source": "https://www.honor.com/mx/album/honor8x/1.14/",
+      "models": [
+        "Honor 8X"
+      ]
+    },
+    {
+      "layout": "dual-horizontal-fingerprint",
+      "source": "https://www.ztedevices.mx/wp-content/uploads/2020/02/v8-mini-quick-start-guide.pdf",
+      "models": [
+        "Zte Blade V8 Mini"
+      ]
+    },
+    {
+      "layout": "nothing-dual",
+      "source": "https://in.nothing.tech/pages/phone-2",
+      "models": [
+        "Nothing Phone 2"
+      ]
+    },
+    {
+      "layout": "poco-f1",
+      "source": "https://www.mi.com/sg/support/faq/details/KA-12741/",
+      "models": [
+        "Poco F1"
+      ]
+    },
+    {
+      "layout": "dual-left-fingerprint",
+      "source": "https://www.mi.com/in/redmi-note-7-pro",
+      "models": [
+        "Redmi Note 7 Pro"
+      ]
+    },
+    {
+      "layout": "triple-vertical",
+      "source": "https://news.samsung.com/in/samsung-galaxy-a25-5g-galaxy-a15-5g-with-awesome-camera-and-new-editing-features-launched-in-india",
+      "models": [
+        "Galaxy A15 (5G)",
+        "Galaxy A25 (5G)"
+      ]
+    },
+    {
+      "layout": "triple-vertical",
+      "source": "https://news.samsung.com/za/continuous-innovation-creating-awesome-camera-experiences-with-the-galaxy-a-series",
+      "models": [
+        "Galaxy A35 (5G)",
+        "Galaxy A55"
+      ]
+    },
+    {
+      "layout": "samsung-dual-rings",
+      "source": "https://news.samsung.com/ph/awesome-within-reach-the-new-samsung-galaxy-a05-and-a05s-are-now-available-starting-p5690",
+      "models": [
+        "Galaxy A05"
+      ]
+    },
+    {
+      "layout": "triple-vertical",
+      "source": "https://news.samsung.com/ph/awesome-within-reach-the-new-samsung-galaxy-a05-and-a05s-are-now-available-starting-p5690",
+      "models": [
+        "Galaxy A05S"
+      ]
+    },
+    {
+      "layout": "samsung-dual-rings",
+      "source": "https://news.samsung.com/ph/the-galaxy-a06-and-a16-are-now-more-accessible-than-ever",
+      "models": [
+        "Galaxy A06 (4G)"
+      ]
+    },
+    {
+      "layout": "triple-vertical",
+      "source": "https://news.samsung.com/ph/the-galaxy-a06-and-a16-are-now-more-accessible-than-ever",
+      "models": [
+        "Galaxy A16 (5G)"
+      ]
+    },
+    {
+      "layout": "samsung-quad-island",
+      "source": "https://news.samsung.com/be/samsung-galaxy-a52-a52-5g-en-a72-maken-innovatie-voor-iedereen-toegankelijk",
+      "models": [
+        "Galaxy A52 (5G)",
+        "Galaxy A72"
+      ]
+    },
+    {
+      "layout": "samsung-quad-island",
+      "source": "https://news.samsung.com/global/galaxy-a53-5g-and-galaxy-a33-5g-awesome-mobile-experiences-open-to-everyone",
+      "models": [
+        "Galaxy A53 (5G)",
+        "Galaxy A33 (5G)"
+      ]
+    }
+  ]
+}

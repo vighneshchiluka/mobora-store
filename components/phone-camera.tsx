@@ -2,7 +2,7 @@ import {cameraLayouts,resolveCameraLayout} from '@/lib/phone-preview';
 export default function PhoneCamera({model}:{model?:string}){
  const id=resolveCameraLayout(model);
  if(!id)return null;
- const profile=cameraLayouts[id] as {label:string;lenses:readonly (readonly number[])[];plate?:readonly number[];circle?:readonly number[];flash:readonly number[];fingerprint?:readonly number[];sensors?:readonly (readonly number[])[]};
+ const profile=cameraLayouts[id] as {label:string;lenses:readonly (readonly number[])[];plate?:readonly number[];circle?:readonly number[];flash:readonly number[];fingerprint?:readonly number[];sensors?:readonly (readonly number[])[];rings?:readonly (readonly number[])[]};
  const p=profile.plate,c=profile.circle;
  return <svg className="phone-camera-overlay" viewBox="0 0 160 300" preserveAspectRatio="none" aria-hidden="true" data-camera-layout={id} data-lens-count={profile.lenses.length}>
   {p&&<rect x={p[0]} y={p[1]} width={p[2]} height={p[3]} rx={p[4]} fill="#303b3d" stroke="#9aa3a0" strokeWidth="1.5"/>}
@@ -11,5 +11,6 @@ export default function PhoneCamera({model}:{model?:string}){
   <circle cx={profile.flash[0]} cy={profile.flash[1]} r="3.8" fill="#fff4d1" stroke="#c5c5ad" strokeWidth=".7"/>
   {profile.fingerprint&&<circle data-fingerprint="true" cx={profile.fingerprint[0]} cy={profile.fingerprint[1]} r={profile.fingerprint[2]} fill="#7d8579" stroke="#c4c8b9" strokeWidth="1.5"/>}
   {profile.sensors?.map(([cx,cy,r],i)=><circle key={i} cx={cx} cy={cy} r={r} fill="#171c22" stroke="#71837e" strokeWidth=".7"/>)}
+  {profile.rings?.map(([cx,cy,r],i)=><circle data-decorative-ring="true" key={i} cx={cx} cy={cy} r={r} fill="none" stroke="#9aa3a0" strokeWidth="1.5"/>)}
  </svg>;
 }
