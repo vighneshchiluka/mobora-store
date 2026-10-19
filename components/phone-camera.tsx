@@ -1,6 +1,6 @@
-import {cameraLayouts,resolveCameraLayout,CameraLayout} from '@/lib/phone-preview';
-export default function PhoneCamera({model,layout}:{model?:string;layout?:CameraLayout}){
- const id=resolveCameraLayout(model,layout);
+import {cameraLayouts,resolveCameraLayout} from '@/lib/phone-preview';
+export default function PhoneCamera({model}:{model?:string}){
+ const id=resolveCameraLayout(model);
  if(!id)return null;
  const profile=cameraLayouts[id] as {label:string;lenses:readonly (readonly number[])[];plate?:readonly number[];circle?:readonly number[];flash:readonly number[];sensors?:readonly (readonly number[])[]};
  const p=profile.plate,c=profile.circle;

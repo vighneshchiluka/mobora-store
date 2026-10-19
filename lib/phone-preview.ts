@@ -2,6 +2,7 @@
  * Match explicit models only; never infer camera positions from a brand name.
  */
 export const cameraLayouts={
+ 'pixel-a-pill':{label:'Two · horizontal pill',lenses:[[34,40,7],[61,40,7]],plate:[16,21,65,38,19],flash:[99,40]},
  'single':{label:'Single camera',lenses:[[27,28,11]],plate:[12,12,48,32,14],flash:[48,28]},
  'dual-horizontal':{label:'Two · horizontal',lenses:[[26,27,10],[49,27,10]],plate:[12,13,65,29,14],flash:[68,27]},
  'dual-vertical':{label:'Two · vertical',lenses:[[28,28,12],[28,59,12]],plate:[12,12,33,64,17],flash:[54,42]},
@@ -46,10 +47,12 @@ register('quad-vertical','https://www.mi.com/in/redmi-note-8/',['Xiaomi Redmi No
 register('quad-center','https://www.mi.com/in/redmi-note-9/specs/',['Xiaomi Redmi Note 9','Redmi Note 9','Xiaomi Redmi Note 9 Pro','Redmi Note 9 Pro','Xiaomi Redmi Note 9 Pro Max','Redmi Note 9 Pro Max']);
 register('bar-dual','https://blog.google/products-and-platforms/devices/pixel/google-pixel-camera-bar/',['Google Pixel 6','Google Pixel 6A','Google Pixel 7','Google Pixel 7A','Google Pixel 8','Google Pixel 8A']);
 register('bar-triple','https://blog.google/products-and-platforms/devices/pixel/google-pixel-camera-bar/',['Google Pixel 6 Pro','Google Pixel 7 Pro','Google Pixel 8 Pro']);
+register('pixel-a-pill','https://store.google.com/in/product/pixel_10a',['Google Pixel 10A']);
+register('pixel-a-pill','https://blog.google/products-and-platforms/devices/pixel/pixel-9a-new-design-camera/',['Google Pixel 9A']);
 register('two-rings','https://www.oneplus.in/nord-ce4-5g',['OnePlus Nord CE 4','OnePlus Nord CE 4 5G','OnePlus Nord CE 4 Lite 5G']);
 register('three-two-rings','https://www.oneplus.in/nord-ce-3-lite-5g',['OnePlus Nord CE 3 Lite 5G','OnePlus Nord CE 3 5G']);
 register('circle-left','https://www.oneplus.in/11',['OnePlus 11 5G','OnePlus 11R 5G']);
 register('quad-l','https://images.samsung.com/is/content/samsung/p5/in/e-catalogues/eCatalogue-A-Series-Smartphones_0908.pdf',['Galaxy A51','Galaxy A71']);
 export function getPhonePreview(model=''){return profiles[normalizePhone(model)]}
-export function resolveCameraLayout(model='',override?:CameraLayout){return override||getPhonePreview(model)?.cameraLayout}
+export function resolveCameraLayout(model=''){return getPhonePreview(model)?.cameraLayout}
 export function cameraDescription(layout?:CameraLayout){return isCameraLayout(layout)?cameraLayouts[layout].label:'Camera layout awaiting verification'}
