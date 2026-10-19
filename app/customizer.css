@@ -1,0 +1,65 @@
+/* Compact studio: keep readable inputs, remove oversized panels and repeated gaps. */
+.clean-store .studio-modal{width:min(860px,calc(100vw - 32px));max-height:calc(100dvh - 28px)}
+.clean-store .studio-modal .modal-head{padding:15px 20px;min-height:62px}
+.clean-store .studio-modal .modal-head h2{font-size:22px;line-height:1.4;margin:0}
+.clean-store .studio-designer{grid-template-columns:260px minmax(0,1fr);align-items:start}
+.clean-store .studio-preview{top:63px;min-height:0;padding:24px 18px;gap:13px}
+.clean-store .studio-preview .phone{width:130px;height:245px}
+.clean-store .studio-preview .flowers{transform:scale(.8);transform-origin:top left}
+.clean-store .studio-preview .sun-art{padding-top:80px}.clean-store .studio-preview .sun-art b{font-size:24px}
+.clean-store .studio-preview .name-art{padding-top:111px}.clean-store .studio-preview .name-art b{font-size:28px}
+.clean-store .studio-preview .photo-art i{font-size:11px}
+.clean-store .studio-preview>p{font-size:12px;line-height:1.65;margin:0;max-width:220px}
+.studio-preview-label{font-size:11px;letter-spacing:1px}.clean-store .preview-model{font-size:14px;line-height:1.6}
+.clean-store .studio-form{padding:18px 22px 0}
+.studio-product{gap:12px}.clean-store .studio-form .eyebrow{margin-bottom:5px;font-size:10px}
+.clean-store .studio-product h3{font-size:25px;line-height:1.3;margin:0}
+.studio-price{font-size:23px;line-height:1.3}.studio-price small{font-size:11px;margin-top:3px}
+.studio-intro{font-size:15px;line-height:1.65;margin:9px 0 17px;max-width:100%}
+.studio-step{margin-bottom:17px}.studio-step legend{font-size:16px;line-height:1.5;margin-bottom:11px;gap:8px}
+.studio-step legend>span{width:25px;height:25px;font-size:11px}
+.studio-phone-fields{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:12px}
+.studio-combobox>label{font-size:15px;line-height:1.5;margin-bottom:6px}.studio-combobox>label small{font-size:11px}
+.combo-control{height:49px;padding-inline:10px;gap:6px}
+.clean-store .designer-form .studio-combobox .combo-control input{font-size:16px;min-height:46px;padding-block:8px}
+.clean-store .designer-form .studio-combobox .combo-control input::placeholder{font-size:15px}
+.studio-helper{font-size:12px;line-height:1.65;margin:7px 0 0}
+.clean-store .designer-form .studio-upload{min-height:106px;padding:14px 12px;gap:6px}
+.upload-icon{width:34px;height:34px;margin:0}.upload-icon svg{width:20px;height:20px}
+.clean-store .studio-upload b{font-size:16px;line-height:1.5}.clean-store .studio-upload>span:not(.upload-icon){font-size:12px;line-height:1.5}
+.studio-finishing-details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 10px}
+.studio-finishing-details>summary{display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;font-size:14px;line-height:1.5;padding:12px 0;color:var(--ink);list-style:none}
+.studio-finishing-details>summary::-webkit-details-marker{display:none}.studio-finishing-details>summary>span{margin-left:auto;font-size:12px;color:var(--muted)}
+.studio-finishing-details>summary:after{content:'+';font-size:20px;color:var(--muted)}.studio-finishing-details[open]>summary:after{content:'−'}
+.studio-finishing-details .studio-finishing{margin-bottom:8px}.studio-finishing-details .studio-finishing>legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.studio-finishing-details .studio-colour{margin-top:10px;padding:10px 0;border-bottom:0}
+.studio-text-label,.studio-colour{font-size:15px}.clean-store .designer-form .studio-finishing .studio-text-label input{font-size:16px;min-height:46px;padding:10px 12px}
+.studio-save{padding:11px 0 13px;border-top:0}
+.clean-store .studio-save .primary{font-size:16px;min-height:48px;padding:12px 15px}
+.clean-store .studio-save .fine-print{font-size:11px;line-height:1.6;margin-top:7px}
+@media(max-width:760px){.clean-store .studio-designer{grid-template-columns:210px minmax(0,1fr)}.clean-store .studio-form{padding:17px 18px 0}.studio-phone-fields{grid-template-columns:1fr;gap:11px}.clean-store .studio-preview{padding:22px 12px}.clean-store .studio-preview .phone{width:120px;height:225px}.clean-store .studio-product h3{font-size:23px}}
+@media(max-width:560px){
+ .clean-store .studio-modal{width:calc(100vw - 18px);max-height:calc(100dvh - 18px)}
+ .clean-store .studio-modal .modal-head{padding:13px 16px;min-height:57px}.clean-store .studio-modal .modal-head h2{font-size:20px;line-height:1.4}
+ .clean-store .studio-designer{display:flex;flex-direction:column}
+ .clean-store .studio-preview{position:relative;top:auto;display:grid;grid-template-columns:102px minmax(0,1fr);grid-template-rows:auto auto auto;align-items:center;min-height:0;padding:15px 18px;gap:8px 18px;width:100%}
+ .clean-store .studio-preview .phone{width:90px;height:169px;grid-column:1;grid-row:1 / span 3;justify-self:center}
+ .clean-store .studio-preview .flowers{transform:scale(.54)}
+ .clean-store .studio-preview .sun-art{padding-top:48px}.clean-store .studio-preview .sun-art b{font-size:15px}.clean-store .studio-preview .sun-art>span{font-size:26px;margin-bottom:6px}
+ .clean-store .studio-preview .sun-art small{font-size:4px}.clean-store .studio-preview .name-art{padding-top:74px}.clean-store .studio-preview .name-art b{font-size:21px}
+ .clean-store .studio-preview .photo-art i{font-size:8px;bottom:20px}
+ .studio-preview-label{font-size:10px;letter-spacing:.6px;align-self:end}.clean-store .preview-model{font-size:13px;max-width:none;align-self:center}
+ .clean-store .studio-preview>p{font-size:11px;line-height:1.65;max-width:none;align-self:start;margin:0}
+ .clean-store .studio-form{padding:16px 18px 0;width:100%}.clean-store .studio-product h3{font-size:24px;line-height:1.35}.studio-price{font-size:22px}
+ .studio-intro{font-size:15px;line-height:1.7;margin:8px 0 16px}.studio-step{margin-bottom:16px}.studio-step legend{font-size:16px;margin-bottom:10px}
+ .studio-phone-fields{grid-template-columns:1fr;gap:11px}.studio-combobox>label{font-size:15px}.clean-store .designer-form .studio-combobox .combo-control input{font-size:16px}
+ .clean-store .designer-form .studio-upload{min-height:106px;padding:13px 10px}.clean-store .studio-upload b{font-size:16px;line-height:1.5}
+ .clean-store .studio-upload>span:not(.upload-icon){font-size:12px}.studio-helper{font-size:12px;line-height:1.65}
+ .studio-save{padding:10px 0 12px}.clean-store .studio-save .primary{font-size:16px;min-height:48px}.clean-store .studio-save .fine-print{font-size:11px;line-height:1.6;margin-top:7px}
+}
+
+.clean-store .studio-form .studio-helper{font-size:12px;line-height:1.5;margin:6px 0 0}
+.clean-store .studio-form .studio-intro{font-size:15px;line-height:1.6}
+.clean-store .studio-designer{background:var(--surface)}
+.clean-store .studio-preview{align-self:stretch}
+

@@ -2,6 +2,9 @@
  * Match explicit models only; never infer camera positions from a brand name.
  */
 export const cameraLayouts={
+ 'lenovo-k6-center':{label:'Single centre camera · flash · fingerprint opening',lenses:[[80,28,10]],flash:[80,49],fingerprint:[80,76,10]},
+ 'lenovo-k8-center':{label:'Two centre cameras · fingerprint opening',lenses:[[80,26,9],[80,49,9]],plate:[66,12,28,52,13],flash:[55,38],fingerprint:[80,86,10]},
+ 'lenovo-k9-horizontal':{label:'Two horizontal cameras · fingerprint opening',lenses:[[24,23,8],[45,23,8]],plate:[11,11,64,25,12],flash:[64,23],fingerprint:[80,70,10]},
  'pixel-a-pill':{label:'Two · horizontal pill',lenses:[[34,40,7],[61,40,7]],plate:[16,21,65,38,19],flash:[99,40]},
  'single':{label:'Single camera',lenses:[[27,28,11]],plate:[12,12,48,32,14],flash:[48,28]},
  'dual-horizontal':{label:'Two · horizontal',lenses:[[26,27,10],[49,27,10]],plate:[12,13,65,29,14],flash:[68,27]},
@@ -53,6 +56,11 @@ register('two-rings','https://www.oneplus.in/nord-ce4-5g',['OnePlus Nord CE 4','
 register('three-two-rings','https://www.oneplus.in/nord-ce-3-lite-5g',['OnePlus Nord CE 3 Lite 5G','OnePlus Nord CE 3 5G']);
 register('circle-left','https://www.oneplus.in/11',['OnePlus 11 5G','OnePlus 11R 5G']);
 register('quad-l','https://images.samsung.com/is/content/samsung/p5/in/e-catalogues/eCatalogue-A-Series-Smartphones_0908.pdf',['Galaxy A51','Galaxy A71']);
+register('lenovo-k6-center','https://support.lenovo.com/jm/en/solutions/PD105037',['Lenovo K6 Note']);
+register('lenovo-k6-center','https://support.lenovo.com/my/en/solutions/pd104415-overview-for-lenovo-k6-lenovo-k6-power',['Lenovo K6 Power']);
+register('lenovo-k6-center','https://support.lenovo.com/tc/en/solutions/pd104293-overview-for-lenovo-vibe-k5-note-smartphone',['Lenovo K5 Note']);
+register('lenovo-k8-center','https://support.lenovo.com/au/en/solutions/pd500003-overview-for-lenovo-k8-plus',['Lenovo K8 Plus']);
+register('lenovo-k9-horizontal','https://support.lenovo.com/za/en/solutions/ht507425-lenovo-k9-specifications',['Lenovo K9']);
 export function getPhonePreview(model=''){return profiles[normalizePhone(model)]}
 export function resolveCameraLayout(model=''){return getPhonePreview(model)?.cameraLayout}
 export function cameraDescription(layout?:CameraLayout){return isCameraLayout(layout)?cameraLayouts[layout].label:'Camera layout awaiting verification'}
