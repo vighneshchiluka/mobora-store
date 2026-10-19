@@ -1,0 +1,120 @@
+/* Readable, regular-weight typography across both themes. */
+body,.clean-store,.commerce-app,.admin-app{font-family:'DM Sans',sans-serif;font-size:16px;font-weight:400;line-height:1.6}
+.clean-store .announcement,.announcement{font-size:12px;line-height:1.5;letter-spacing:.4px;padding:11px 16px}
+.clean-store nav a,.clean-store nav button,.commerce-header nav a{font-size:15px;font-weight:400}
+.header-actions a{font-size:14px}.clean-store .nav-label{font-size:9px}
+.clean-store .breadcrumbs{font-size:13px;line-height:1.7}
+.clean-store .clean-intro h1{font-size:clamp(34px,4vw,50px);font-weight:400;letter-spacing:-1.7px;line-height:1.2}
+.clean-store .collection-eyebrow{font-size:12px!important;letter-spacing:1.5px;font-weight:400}
+.clean-store .clean-intro>p{font-size:17px;line-height:1.8;max-width:700px;font-weight:400}
+.collection-pills>span{font-size:12px;line-height:1.5;padding:8px 13px}
+.clean-store .model-search{min-height:54px;border-radius:28px;padding-inline:18px}
+.clean-store .model-search input{font-family:inherit;font-size:17px;font-weight:400;min-height:50px;line-height:1.5}
+.clean-store .model-search input::placeholder{font-size:16px;font-weight:400}
+.clean-store .model-picker h2{font-size:23px;line-height:1.4;font-weight:400;letter-spacing:-.4px;margin:24px 0 19px}
+.clean-store .brand-row{font-size:16px;line-height:1.6;font-weight:400;min-height:53px;padding:13px 14px}
+.clean-store .model-options button{font-size:16px;line-height:1.65;padding-block:11px;font-weight:400}
+.clean-store .model-helper{font-size:13px;line-height:1.8;margin-top:18px}
+.clean-store .chosen-phone,.clean-store .chosen-phone button{font-size:14px;line-height:1.6}.clean-store .chosen-phone b{font-weight:500}
+.clean-store .catalog-heading h2{font-size:27px;line-height:1.4;font-weight:400;letter-spacing:-.6px}
+.clean-store .catalog-heading p{font-size:15px;line-height:1.7}.clean-store .text-link{font-size:14px}
+.clean-store .filter-heading h3{font-size:18px;font-weight:400}.clean-store .filter-heading button{font-size:13px}
+.clean-store .filter-section h4{font-size:16px;font-weight:400;margin-bottom:13px}
+.clean-store .price-inputs label,.clean-store .price-inputs input{font-size:14px}
+.clean-store .budget-buttons button{font-size:13px;line-height:1.6;padding:8px 7px}
+.clean-store .filter-radio-list label,.clean-store .select-filter span{font-size:14px;line-height:1.7}
+.clean-store .filter-radio-list small{font-size:12px}.clean-store .select-filter select{font-size:14px;min-height:45px}
+.clean-store .filter-footnote{font-size:12px;line-height:1.8}
+.clean-store .result-count,.clean-store .sort-label,.clean-store .sort-label select{font-size:14px}
+.clean-store .active-filter-tags button{font-size:13px;line-height:1.5}
+.clean-store .product-kicker,.wishlist-grid .product-kicker{font-size:11px;font-weight:400;letter-spacing:.7px;margin:16px 8px 8px}
+.clean-store .product-title h3,.wishlist-grid h3{font-size:17px;font-weight:400;line-height:1.5;letter-spacing:-.15px;min-height:51px;margin-inline:8px;overflow-wrap:anywhere}
+.clean-store .clean-product-bottom,.wishlist-grid .clean-product-bottom{margin-top:14px;gap:8px;flex-wrap:wrap}
+.clean-store .clean-product-bottom>span,.wishlist-grid .clean-product-bottom>span{font-size:21px;line-height:1.3;font-weight:500}
+.clean-product-bottom>span small{font-size:11px;line-height:1.5;margin-top:5px;font-weight:400}
+.clean-store .clean-product-bottom>button,.wishlist-grid .clean-product-bottom>a{font-size:13px;line-height:1.4;font-weight:400;padding:8px 10px;min-height:36px}
+.clean-store .product-tag{font-size:8px;line-height:1.5;letter-spacing:.2px;max-width:140px}
+.clean-store .price-note{font-size:13px;line-height:1.8}
+.clean-store .clean-info h2{font-size:25px;font-weight:400;line-height:1.4}
+.clean-store .clean-info p,.clean-store .clean-instagram p{font-size:16px;line-height:1.9}
+.clean-store .clean-info summary,.clean-store .clean-instagram summary{font-size:17px;font-weight:400;line-height:1.7}
+.clean-store .clean-info a{font-size:15px}.clean-store .clean-footer h3{font-size:16px;font-weight:400}
+.clean-store .clean-footer p,.clean-store .clean-footer a,.clean-store .clean-footer button{font-size:14px;line-height:1.8}
+.clean-store .clean-footer-bottom{font-size:12px;line-height:1.7}
+.clean-store .studio-modal .modal-head h2{font-size:25px;font-weight:400;line-height:1.4;letter-spacing:-.5px}
+.studio-preview-label{font-size:12px;line-height:1.5;letter-spacing:1.3px;font-weight:400}
+.clean-store .preview-model{font-size:15px;line-height:1.6}
+.clean-store .studio-preview>p{font-size:13px;line-height:1.8;max-width:260px}
+.clean-store .studio-product h3{font-size:27px;font-weight:400;line-height:1.4}
+.clean-store .studio-form .eyebrow{font-size:11px;line-height:1.6;letter-spacing:1.2px}
+.studio-price{font-size:24px;font-weight:400}.studio-price small{font-size:12px}
+.studio-intro{font-size:16px;line-height:1.8;max-width:430px}
+.studio-step legend{font-size:18px;font-weight:400;line-height:1.5;gap:10px}
+.studio-step legend>span{font-size:12px;width:28px;height:28px}.studio-step legend>small{font-size:13px}
+.studio-combobox>label{font-size:16px;font-weight:400;line-height:1.6}.studio-combobox>label small{font-size:12px}
+.combo-control{height:54px}.clean-store .designer-form .studio-combobox .combo-control input{font-size:18px;font-weight:400;line-height:1.5;min-height:50px}
+.clean-store .designer-form .studio-combobox .combo-control input::placeholder{font-size:16px}
+.combo-caption{font-size:12px;line-height:1.7}.combo-popup li button{font-size:16px;font-weight:400;line-height:1.6;padding:12px}
+.combo-no-results,.studio-helper{font-size:13px;line-height:1.8}
+.clean-store .studio-upload b{font-size:18px;font-weight:400;line-height:1.6}
+.clean-store .studio-upload>span:not(.upload-icon){font-size:13px;line-height:1.8}
+.studio-text-label,.studio-colour{font-size:16px;font-weight:400;line-height:1.6}.studio-text-label>span{font-size:12px}.studio-colour small{font-size:12px}
+.clean-store .designer-form .studio-finishing .studio-text-label input{font-size:18px;min-height:52px}
+.clean-store .designer-form .studio-finishing .studio-text-label input::placeholder{font-size:16px}
+.clean-store .studio-save .primary{font-size:17px;font-weight:400;line-height:1.5;min-height:54px}
+.clean-store .studio-save .fine-print{font-size:12px;line-height:1.8}
+.clean-store .modal p,.clean-store .enquiry-form label{font-size:15px;line-height:1.8}.clean-store .bag-items p{font-size:14px}.clean-store .bag-item h3{font-size:17px;font-weight:400}
+.clean-store .bag-orders,.clean-store .bag-enquiry summary{font-size:14px;line-height:1.7}
+.page-eyebrow{font-size:12px;line-height:1.7;letter-spacing:1.2px;font-weight:400}.page-lead{font-size:17px;line-height:1.8}
+.surface p,.account-benefits p{font-size:16px;line-height:1.8}.surface small,.small-note{font-size:13px;line-height:1.8}
+.commerce-form label{font-size:16px;line-height:1.6;font-weight:400}.commerce-form input,.commerce-form select{font-size:17px;min-height:50px}
+.commerce-form .checkout-consent{font-size:13px;line-height:1.8}
+.primary,.secondary{font-size:15px;font-weight:400;line-height:1.5;min-height:44px}
+.account-shortcuts b{font-size:18px}.account-shortcuts small{font-size:13px}.account-welcome>small{font-size:13px}
+.checkout-steps{font-size:14px}.checkout-notice{font-size:14px!important;line-height:1.8}
+.summary-item b{font-size:16px;line-height:1.5}.summary-item small{font-size:13px}.summary-item>span,.summary-total{font-size:15px}.summary-total.grand{font-size:21px}
+.payment-badges span{font-size:12px}.order-line h3{font-size:17px;font-weight:400}.order-line p{font-size:14px}.order-line b{font-size:16px}
+.order-footer{font-size:14px}.status-pill{font-size:12px;padding:7px 10px}.order-progress>span{font-size:12px;line-height:1.5}
+.commerce-footer{font-size:13px;line-height:1.8}
+.admin-sidebar nav button{font-size:15px}.admin-sidebar>.page-eyebrow{font-size:11px}.admin-sidebar-bottom{font-size:12px}.admin-sidebar-bottom a{font-size:14px}
+.admin-top{font-size:13px}.admin-main .page-lead{font-size:16px}.admin-setup b{font-size:15px;font-weight:400}.admin-setup p{font-size:13px;line-height:1.8}.admin-setup>span{font-size:12px}
+.stat>div{font-size:14px;line-height:1.6}.stat>b{font-size:33px;font-weight:400}.stat>small{font-size:12px}
+.admin-table-section h2{font-size:22px;font-weight:400}.admin-table-section .small-note{font-size:13px}.table-controls input,.table-controls select{font-size:13px;min-height:42px}
+.admin-app table{font-size:14px;min-width:800px}.admin-app th{font-size:12px;letter-spacing:.4px}.admin-app td b{font-size:14px;font-weight:400}.admin-app td small{font-size:12px}.order-id,.payment-state{font-size:13px}
+.admin-empty h3{font-size:20px}.admin-empty p{font-size:14px}.admin-quick p,.enquiry-detail p{font-size:14px}.enquiry-detail{font-size:15px}
+/* Keep secondary text clear rather than making light-weight type faint. */
+.clean-store .product-kicker,.clean-store .filter-footnote,.clean-store .model-helper,.clean-store .price-note,.studio-helper,.studio-intro,.clean-store .studio-preview>p{color:#b4bea9}
+html[data-theme=light] .clean-store .product-kicker,html[data-theme=light] .clean-store .filter-footnote,html[data-theme=light] .clean-store .model-helper,html[data-theme=light] .clean-store .price-note,html[data-theme=light] .studio-helper,html[data-theme=light] .studio-intro,html[data-theme=light] .clean-store .studio-preview>p{color:#637454}
+@media(max-width:1150px){.header-actions a{font-size:13px}.clean-store nav a,.clean-store nav button{font-size:14px}.admin-sidebar nav button{font-size:14px}}
+@media(max-width:800px){.clean-store .brand-row{font-size:15px}.clean-store .product-title h3{font-size:16px}.admin-sidebar nav button{font-size:13px}.commerce-header nav a{font-size:14px}}
+@media(max-width:560px){
+ .clean-store .announcement,.announcement{font-size:11px;letter-spacing:.15px;padding:10px 12px}
+ .clean-store nav a,.clean-store nav button,.commerce-header nav a{font-size:14px}
+ .clean-store .clean-header>.logo,.commerce-header>.logo{font-size:23px}.header-actions{gap:7px}
+ .clean-store .clean-intro h1{font-size:35px;line-height:1.2;letter-spacing:-1.3px}
+ .clean-store .clean-intro>p{font-size:16px;line-height:1.8}.clean-store .collection-eyebrow{font-size:11px!important;line-height:1.7;letter-spacing:1px}
+ .collection-pills{gap:7px}.collection-pills>span{font-size:11px;padding:7px 10px;line-height:1.5}
+ .clean-store .model-picker h2{font-size:22px}.clean-store .model-search input{font-size:17px}.clean-store .model-search input::placeholder{font-size:16px}
+ .clean-store .brand-row{font-size:15px;line-height:1.6;padding:12px 9px;min-height:51px}.clean-store .brand-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .clean-store .model-options{grid-template-columns:1fr}.clean-store .model-options button{font-size:16px}.clean-store .model-helper{font-size:12px;line-height:1.8}
+ .clean-store .catalog-heading h2{font-size:24px;line-height:1.4}.clean-store .catalog-heading p{font-size:14px}.clean-store .result-count,.clean-store .sort-label,.clean-store .sort-label select{font-size:13px}
+ .clean-store .product-kicker,.wishlist-grid .product-kicker{font-size:10px;letter-spacing:.4px;margin:13px 5px 8px}
+ .clean-store .product-title h3,.wishlist-grid h3{font-size:16px;line-height:1.5;min-height:48px;margin-inline:5px}
+ .clean-store .clean-product-bottom,.wishlist-grid .clean-product-bottom{margin:12px 5px 0;gap:9px;flex-wrap:wrap;align-items:center}
+ .clean-store .clean-product-bottom>span,.wishlist-grid .clean-product-bottom>span{font-size:20px}.clean-product-bottom>span small{font-size:10px;line-height:1.6}
+ .clean-store .clean-product-bottom>button,.wishlist-grid .clean-product-bottom>a{font-size:13px;padding:8px 9px;min-height:38px}
+ .clean-store .product-tag{font-size:7px;max-width:105px}.clean-store .price-note{font-size:12px;line-height:1.8}
+ .clean-store .studio-modal .modal-head h2{font-size:22px;line-height:1.4}.studio-preview-label{font-size:11px;letter-spacing:.7px}
+ .clean-store .preview-model{font-size:14px;line-height:1.6}.clean-store .studio-preview>p{font-size:12px;line-height:1.8}
+ .clean-store .studio-form h3{font-size:25px;font-weight:400;line-height:1.4}.clean-store .studio-form .eyebrow{font-size:11px;line-height:1.6}
+ .studio-price{font-size:23px}.studio-price small{font-size:11px}.studio-intro{font-size:16px;line-height:1.8}
+ .studio-step legend{font-size:17px;font-weight:400}.studio-combobox>label{font-size:16px}.studio-combobox>label small{font-size:12px}
+ .clean-store .designer-form .studio-combobox .combo-control input{font-size:18px}.combo-popup li button{font-size:16px;min-height:47px}
+ .studio-helper{font-size:13px;line-height:1.8}.clean-store .studio-upload b{font-size:18px}.clean-store .studio-upload>span:not(.upload-icon){font-size:13px}
+ .studio-text-label,.studio-colour{font-size:16px}.clean-store .studio-save .primary{font-size:17px;line-height:1.5}.clean-store .studio-save .fine-print{font-size:12px;line-height:1.8}
+ .commerce-main .page-lead{font-size:16px}.surface p,.account-benefits p{font-size:16px}.small-note,.surface small{font-size:13px}
+ .checkout-steps{font-size:13px;gap:7px}.commerce-form label{font-size:16px}.commerce-form input{font-size:17px}.summary-item b{font-size:15px}.summary-item small{font-size:12px}
+ .order-progress{flex-wrap:wrap;gap:18px 10px}.order-progress>span{font-size:11px;flex-basis:28%}.order-footer{font-size:13px}.status-pill{font-size:11px}
+ .admin-sidebar nav button{font-size:12px;padding:10px 7px}.admin-top{font-size:12px}.admin-main .page-lead{font-size:15px}.admin-setup p{font-size:12px}.stat>div{font-size:13px}.stat>small{font-size:12px}
+ .table-controls input,.table-controls select{font-size:13px}.admin-quick p{font-size:14px}.commerce-footer{font-size:12px}
+}
