@@ -18,3 +18,7 @@ Replace the sample products, indicative prices, model compatibility and photos w
 
 Preview is illustrative and uses centred cropping; camera placement varies by model. Original files and optional text are retained for human artwork confirmation; no production print template or automated print file is claimed. The hero and catalogue illustrations are original SVG/CSS-style designs. Gallery photos were obtained from the user-specified Instagram page on 19 October 2026. They are presented as Ganraj collection examples, not as verified MOBORA inventory.
 
+
+## Clean storefront update
+
+The homepage and /mobile-cover use a centred, searchable brand/model accordion. /accessories is a dedicated catalogue for grips, cables, chargers and screen protectors. Both catalogues have min/max prices, budget presets, category/type, colour, sort and search controls. Accessories also filter by device compatibility. Mobile filters collapse with a Show products button. The selected phone carries between pages in session storage; bag items persist locally. DM Sans is hosted locally with its SIL Open Font License in public/fonts/OFL.txt. The original Instagram photos remain in an expandable collection section. Paid checkout and an owner dashboard remain unimplemented as described above.
