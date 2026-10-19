@@ -63,3 +63,11 @@
 .clean-store .studio-designer{background:var(--surface)}
 .clean-store .studio-preview{align-self:stretch}
 
+
+.fitted-cover-text{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+.clean-store .clean-instagram,.clean-store .clean-info{padding:28px 30px;border-radius:10px}
+.clean-store .clean-instagram summary{gap:16px}
+.clean-store .clean-instagram .instagram-grid{margin-top:22px;gap:20px 16px}
+.clean-store .clean-info h2{margin-top:0}
+@media(max-width:560px){.clean-store .clean-instagram,.clean-store .clean-info{padding:22px 18px}.clean-store .clean-instagram .instagram-grid{gap:18px 12px}}
+
