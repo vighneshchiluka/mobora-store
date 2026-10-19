@@ -1,0 +1,165 @@
+/* Header switch, shared by both palettes. */
+.theme-toggle{position:relative;display:inline-flex!important;align-items:center;justify-content:space-between;gap:9px;width:56px;min-width:56px;height:32px;padding:0 7px!important;border:1px solid #4a5442;border-radius:22px;background:#222a1d;color:#a8b89a;isolation:isolate;flex-shrink:0;cursor:pointer}
+.theme-toggle svg{z-index:1;flex-shrink:0}.theme-toggle-thumb{position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#eac099;transform:translateX(24px);transition:transform .2s;z-index:0}.theme-toggle[aria-checked=true] svg:last-child{color:#34271a}.theme-toggle[aria-checked=false] .theme-toggle-thumb{transform:translateX(0);background:#fff;box-shadow:0 1px 4px #0002}.theme-toggle[aria-checked=false] svg:first-of-type{color:#a75c31}.theme-toggle:hover{border-color:#dfac7f}.theme-toggle:focus-visible{outline:3px solid #da935e;outline-offset:3px}.admin-header-actions,.article-header{display:flex;align-items:center;justify-content:space-between;gap:20px}.article-header{margin-bottom:30px}.article-header .logo{margin-bottom:0}
+html[data-theme=light]{color-scheme:light;--ink:#292f25;--paper:#fcfbf8;--orange:#b35a37;--line:#e0e4d9;--muted:#68765e;--surface:#fff;--accent:#b35a37}
+html[data-theme=light] body,html[data-theme=light] .clean-store,html[data-theme=light] .commerce-app,html[data-theme=light] .admin-app{background:#fcfbf8;color:#293124}
+html[data-theme=light] .announcement,html[data-theme=light] .clean-store .announcement{background:#e9eedf;color:#4b6040}
+html[data-theme=light] .logo,html[data-theme=light] .clean-store .logo,html[data-theme=light] .clean-store .clean-footer .logo{color:#2c3526}
+html[data-theme=light] .logo span,html[data-theme=light] .clean-store .logo span{color:#bd633f}
+html[data-theme=light] .clean-store .clean-header,html[data-theme=light] .commerce-header{background:#fcfbf8;border-color:#e0e4d9}
+html[data-theme=light] .clean-store nav a,html[data-theme=light] .clean-store nav button,html[data-theme=light] .commerce-header nav{color:#53614a}
+html[data-theme=light] .clean-store nav .nav-active{color:#98512e;border-color:#b46c43}
+html[data-theme=light] .clean-store .nav-label{background:#f2e5d7;color:#875432}
+html[data-theme=light] .header-actions .wishlist-link{background:#edf1e7;color:#4f6540}
+html[data-theme=light] .header-actions .account-link,html[data-theme=light] .header-actions>button{color:#3c4c32}
+html[data-theme=light] .header-actions .theme-toggle,html[data-theme=light] .theme-toggle{background:#e9ede4;border-color:#d0d9c5;color:#748568}
+html[data-theme=light] .bag-button span{background:#dfb993;color:#30271d}
+html[data-theme=light] .clean-store .breadcrumbs,html[data-theme=light] .clean-store .clean-intro>p{color:#697660}
+html[data-theme=light] .clean-store .clean-intro h1,html[data-theme=light] .commerce-main h1,html[data-theme=light] .admin-main h1{color:#2d3526}
+html[data-theme=light] .clean-store .collection-eyebrow{color:#6d805b!important}
+html[data-theme=light] .collection-pills>span{background:#f0f3e9;border-color:#dce4d1;color:#5a7048}
+html[data-theme=light] .clean-store .model-picker{background:#f2f5eb;border-color:#dce4d1}
+html[data-theme=light] .clean-store .model-picker h2{color:#34452a}
+html[data-theme=light] .clean-store .model-search,html[data-theme=light] .clean-store .search-bar{background:#fff;border-color:#d5dfc9;color:#637551}
+html[data-theme=light] .clean-store .model-search input,html[data-theme=light] .clean-store .search-bar input{color:#334329}
+html[data-theme=light] .clean-store input::placeholder{color:#7f8b76}
+html[data-theme=light] .clean-store .brand-group{background:#fff;border-color:#dce4d1}
+html[data-theme=light] .clean-store .brand-row{color:#435638}
+html[data-theme=light] .clean-store .brand-row:hover,html[data-theme=light] .clean-store .brand-row[aria-expanded=true]{background:#e8efdf;color:#354b29}
+html[data-theme=light] .clean-store .model-options{background:#fafcf6;border-color:#d9e3ce}
+html[data-theme=light] .clean-store .model-options button{color:#526b41;border-color:#d9e3ce}
+html[data-theme=light] .clean-store .model-options button:hover{background:#e5efda;color:#354b29}
+html[data-theme=light] .clean-store .model-helper,html[data-theme=light] .clean-store .catalog-heading p,html[data-theme=light] .clean-store .price-note{color:#728366}
+html[data-theme=light] .clean-store .chosen-phone{background:#e8f0df;border-color:#c5d8af;color:#4f6a3d}
+html[data-theme=light] .clean-store .chosen-phone b{color:#354e27}
+html[data-theme=light] .clean-store .chosen-phone button{color:#9b5d36}
+html[data-theme=light] .clean-store .catalog-heading,html[data-theme=light] .clean-store .clean-toolbar{border-color:#dfe6d7}
+html[data-theme=light] .clean-store .catalog-heading h2{color:#3b4b30}
+html[data-theme=light] .clean-store .text-link{color:#9c5b33}
+html[data-theme=light] .clean-store .filter-sidebar,html[data-theme=light] .clean-store .filter-sidebar.filters-open{background:#fff;border-color:#dce4d2}
+html[data-theme=light] .clean-store .filter-heading,html[data-theme=light] .clean-store .filter-section{border-color:#e0e7d8}
+html[data-theme=light] .clean-store .filter-heading h3,html[data-theme=light] .clean-store .filter-section h4{color:#445737}
+html[data-theme=light] .clean-store .filter-heading button{color:#9d613c}
+html[data-theme=light] .clean-store .filter-heading h3 span{background:#e7efdc;color:#4f6b3b}
+html[data-theme=light] .clean-store .price-inputs label,html[data-theme=light] .clean-store .filter-radio-list label,html[data-theme=light] .clean-store .select-filter span{color:#667958}
+html[data-theme=light] .clean-store .price-inputs input,html[data-theme=light] .clean-store .select-filter select,html[data-theme=light] .clean-store .sort-label select{background:#f8faf4;border-color:#d3dfc7;color:#3f5630}
+html[data-theme=light] .clean-store .budget-buttons button{background:#f2f6eb;border-color:#d9e4cd;color:#667f52}
+html[data-theme=light] .clean-store .budget-buttons button:hover,html[data-theme=light] .clean-store .budget-buttons .budget-active{background:#dce9cc;border-color:#aec68e;color:#415d2c}
+html[data-theme=light] .clean-store .filter-radio-list small,html[data-theme=light] .clean-store .filter-footnote,html[data-theme=light] .clean-store .result-count,html[data-theme=light] .clean-store .sort-label{color:#748b61}
+html[data-theme=light] .clean-store .active-filter-tags button{background:#e8f0dc;color:#5b7944}
+html[data-theme=light] .clean-store .product,html[data-theme=light] .wishlist-grid .product{background:#fff;border-color:#e2e6db;box-shadow:0 5px 18px #2d40100a}
+html[data-theme=light] .clean-store .product:hover,html[data-theme=light] .wishlist-grid .product:hover{border-color:#b9c99f}
+html[data-theme=light] .clean-store .product-kicker,html[data-theme=light] .wishlist-grid .product-kicker{color:#7a8f65}
+html[data-theme=light] .clean-store .product-title h3,html[data-theme=light] .wishlist-grid h3{color:#384d29}
+html[data-theme=light] .clean-store .clean-product-bottom>span,html[data-theme=light] .wishlist-grid .clean-product-bottom>span{color:#334723}
+html[data-theme=light] .clean-product-bottom>span small{color:#81966a}
+html[data-theme=light] .clean-store .clean-product-bottom>button,html[data-theme=light] .wishlist-grid .clean-product-bottom>a{background:#edf3e4;border-color:#d0e0bc;color:#5c7a41}
+html[data-theme=light] .clean-store .clean-info,html[data-theme=light] .clean-store .clean-instagram{background:#f4f7ee;border-color:#dce5d0;color:#496435}
+html[data-theme=light] .clean-store .clean-info p,html[data-theme=light] .clean-store .clean-instagram p{color:#6e855a}
+html[data-theme=light] .clean-store .clean-info summary,html[data-theme=light] .clean-store .clean-instagram summary{color:#4b6637}
+html[data-theme=light] .clean-store .clean-footer,html[data-theme=light] .commerce-footer{background:#edf2e3;border-color:#d9e4ca;color:#617b4b}
+html[data-theme=light] .clean-store .clean-footer h3{color:#4b6636}
+html[data-theme=light] .clean-store .clean-footer p,html[data-theme=light] .clean-store .clean-footer a,html[data-theme=light] .clean-store .clean-footer button,html[data-theme=light] .clean-store .clean-footer-bottom{color:#6e8758;border-color:#d8e3c9}
+html[data-theme=light] .primary,html[data-theme=light] .clean-store .primary,html[data-theme=light] .article .primary{background:#bd6e47;color:#fffaf5}
+html[data-theme=light] .primary:hover,html[data-theme=light] .clean-store .primary:hover{background:#a95c37}
+html[data-theme=light] .secondary,html[data-theme=light] .clean-store .show-filter-results{background:#eaf2dd;border-color:#c8dcb1;color:#4d7132}
+html[data-theme=light] .clean-store .mobile-filter-button{border-color:#c8dcb1;color:#507336}
+html[data-theme=light] .clean-store .modal,html[data-theme=light] .clean-store .studio-modal,html[data-theme=light] .clean-store .studio-modal .modal-head,html[data-theme=light] .clean-store .studio-form,html[data-theme=light] .studio-save{background:#fff;color:#384e2a;border-color:#dbe6d0}
+html[data-theme=light] .studio-modal .modal-head button{background:#f1f6e9;border-color:#d0e1bb;color:#6b8851}
+html[data-theme=light] .studio-modal::backdrop{background:#25381d66}
+html[data-theme=light] .clean-store .studio-preview{background:radial-gradient(ellipse at 50% 40%,#f8f4e8,#e6edda);color:#647f4b}
+html[data-theme=light] .clean-store .studio-preview>p,html[data-theme=light] .studio-preview-label,html[data-theme=light] .clean-store .preview-model{color:#758d5e}
+html[data-theme=light] .clean-store .studio-product h3{color:#3b532c}
+html[data-theme=light] .clean-store .studio-form .eyebrow,html[data-theme=light] .studio-intro,html[data-theme=light] .studio-helper{color:#7d9367}
+html[data-theme=light] .studio-price{color:#9b5a34}
+html[data-theme=light] .studio-step legend{color:#4d6b36}
+html[data-theme=light] .studio-step legend>span{background:#eaf1dd;color:#708a55}
+html[data-theme=light] .studio-combobox>label,html[data-theme=light] .studio-text-label,html[data-theme=light] .studio-colour{color:#68824e;border-color:#dce8d0}
+html[data-theme=light] .combo-control{background:#fbfcf8;border-color:#d0e0bf}
+html[data-theme=light] .combo-focused{border-color:#b59461;box-shadow:0 0 0 3px #eadfc944}
+html[data-theme=light] .combo-disabled .combo-control{background:#f2f6ec;border-color:#dce7d0}
+html[data-theme=light] .clean-store .designer-form input:not([type=file]):not([type=color]),html[data-theme=light] .clean-store .designer-form .studio-finishing .studio-text-label input{background:#fafcf6;border-color:#d0e0bf;color:#496333}
+html[data-theme=light] .clean-store .designer-form .studio-combobox .combo-control input{background:transparent;color:#496333}
+html[data-theme=light] .combo-popup{background:#fff;border-color:#d1e2bf}
+html[data-theme=light] .combo-caption{background:#f1f6e9;border-color:#dce9cc;color:#7d9665}
+html[data-theme=light] .combo-popup li button{color:#5b7943}
+html[data-theme=light] .combo-popup li button:hover,html[data-theme=light] .combo-popup li button.keyboard-active,html[data-theme=light] .combo-popup li button[aria-selected=true]{background:#e6f1d9;color:#4a6e30}
+html[data-theme=light] .clean-store .designer-form .studio-upload{background:#f7faf1;border-color:#bed4a3}
+html[data-theme=light] .clean-store .studio-upload b{color:#5a7940}
+html[data-theme=light] .clean-store .studio-upload>span:not(.upload-icon){color:#859d6e}
+html[data-theme=light] .upload-icon{background:#e8f0dc;color:#7f9b61}
+html[data-theme=light] .camera-picker{background:#f8faf4;border-color:#d6e5c7}
+html[data-theme=light] .camera-picker summary{color:#5a7940}
+html[data-theme=light] .camera-picker summary>span,html[data-theme=light] .camera-picker>p{color:#7e9865}
+html[data-theme=light] .camera-choices>button{background:#fff;border-color:#d2e3bf;color:#648447}
+html[data-theme=light] .camera-choices>button[aria-pressed=true]{background:#f3ebda;border-color:#c7a46f;color:#87612e;box-shadow:0 0 0 1px #c7a46f}
+html[data-theme=light] .clean-store .bag-items,html[data-theme=light] .clean-store .bag-item,html[data-theme=light] .clean-store .subtotal,html[data-theme=light] .bag-enquiry{border-color:#d6e4c6}
+html[data-theme=light] .bag-enquiry summary,html[data-theme=light] .bag-orders{color:#7a955e}
+html[data-theme=light] .clean-store .enquiry-form input{background:#fafcf5;color:#526f39;border-color:#d1e2be}
+html[data-theme=light] .clean-store .toast{background:#e6f0d8;color:#4d7131;border-color:#c0d7a1}
+html[data-theme=light] .clean-store .toast button{color:#9a653b}
+html[data-theme=light] .clean-store .error,html[data-theme=light] .form-error{background:#fff0e8;border-color:#eac2a9;color:#98512e}
+html[data-theme=light] .clean-store .empty{color:#718e55}
+html[data-theme=light] .page-eyebrow,html[data-theme=light] .page-lead,html[data-theme=light] .small-note{color:#718563}
+html[data-theme=light] .surface{background:#fff;border-color:#dde5d3;color:#3f582c}
+html[data-theme=light] .surface p,html[data-theme=light] .surface small,html[data-theme=light] .account-benefits p{color:#7c9366}
+html[data-theme=light] .surface h2,html[data-theme=light] .account-benefits h3{color:#405c2d}
+html[data-theme=light] .circle-icon{background:#eaf2dd;border-color:#cee0b6;color:#75964f}
+html[data-theme=light] .account-shortcuts svg,html[data-theme=light] .account-benefits svg,html[data-theme=light] .signout-link{color:#789654}
+html[data-theme=light] .commerce-form label{color:#69844e}
+html[data-theme=light] .commerce-form input,html[data-theme=light] .commerce-form select,html[data-theme=light] .commerce-form .input-prefix{background:#fafcf5;border-color:#cfe1bb;color:#55763a}
+html[data-theme=light] .commerce-form input:read-only{color:#8fa677;border-color:#e0e9d5}
+html[data-theme=light] .commerce-form input::placeholder{color:#96aa83}
+html[data-theme=light] .commerce-form .input-prefix input{background:transparent}
+html[data-theme=light] .commerce-form .checkout-consent,html[data-theme=light] .checkout-steps{color:#839b6b}
+html[data-theme=light] .checkout-steps .active{color:#a57343}
+html[data-theme=light] .checkout-steps i{background:#d1e2bd}
+html[data-theme=light] .checkout-notice{background:#faf2df;border-color:#e1d1a7;color:#997c40!important}
+html[data-theme=light] .summary-item,html[data-theme=light] .summary-total.grand{border-color:#dae7ca}
+html[data-theme=light] .summary-total{color:#839f67}
+html[data-theme=light] .summary-total b,html[data-theme=light] .summary-total.grand{color:#5a7a3e}
+html[data-theme=light] .payment-badges span{background:#f0f6e7;border-color:#d0e3b9;color:#7c9d5b}
+html[data-theme=light] .order-summary h2 span{background:#eaf2dd;color:#7e9e5f}
+html[data-theme=light] .success-note{background:#edf7e1;color:#5b803a!important}
+html[data-theme=light] .customer-order>header,html[data-theme=light] .order-line{border-color:#d8e6c9}
+html[data-theme=light] .order-footer,html[data-theme=light] .order-line>svg{color:#7a985b}
+html[data-theme=light] .status-pill{background:#eaf2df;border-color:#c8dcb0;color:#628541}
+html[data-theme=light] .status-requested,html[data-theme=light] .status-awaiting_payment{background:#fcf2d9;border-color:#e8d6a3;color:#a58a44}
+html[data-theme=light] .status-delivered{background:#e3f1df;border-color:#c3ddbb;color:#5b864b}
+html[data-theme=light] .status-cancelled{background:#f9e8de;border-color:#e5c8b4;color:#a77550}
+html[data-theme=light] .tracking{background:#edf5e3}
+html[data-theme=light] .order-progress>span{color:#94ac7a;border-color:#dae7c9}
+html[data-theme=light] .order-progress>span i{background:#cadfb4}
+html[data-theme=light] .order-progress .completed{color:#698f45;border-color:#95b76e}
+html[data-theme=light] .order-progress .completed i{background:#95b76e}
+html[data-theme=light] .admin-sidebar{background:#eff4e6;border-color:#d4e2c3}
+html[data-theme=light] .admin-sidebar nav button{color:#74965a}
+html[data-theme=light] .admin-sidebar nav button.active{background:#dce9cd;border-color:#c0d6a7;color:#4f7632}
+html[data-theme=light] .admin-sidebar nav small{background:#c6dcb1;color:#557b38}
+html[data-theme=light] .admin-sidebar-bottom,html[data-theme=light] .admin-sidebar-bottom a{color:#799c5c}
+html[data-theme=light] .admin-top{border-color:#d4e2c3;color:#8aa572}
+html[data-theme=light] .admin-top a,html[data-theme=light] .admin-avatar{color:#658b43}
+html[data-theme=light] .admin-avatar{background:#dfebd1}
+html[data-theme=light] .admin-setup{background:#faf2dd;border-color:#dfcfa0;color:#aa8b46}
+html[data-theme=light] .admin-setup p{color:#a48f5b}
+html[data-theme=light] .admin-setup>span{border-color:#d9c18a;color:#a48b51}
+html[data-theme=light] .stat>div,html[data-theme=light] .stat>small{color:#8ba672}
+html[data-theme=light] .stat>b{color:#527735}
+html[data-theme=light] .table-controls label,html[data-theme=light] .table-controls select{background:#f6faf0;border-color:#d0e2b9;color:#8ca972}
+html[data-theme=light] .table-controls input{color:#6f9150}
+html[data-theme=light] .admin-app th{background:#f1f7e8;border-color:#dae7ca;color:#8ca970}
+html[data-theme=light] .admin-app td{border-color:#dce9cd;color:#799d58}
+html[data-theme=light] .admin-app td b{color:#5f8540}
+html[data-theme=light] .admin-app td small{color:#90aa77}
+html[data-theme=light] .order-id{color:#ad8554}
+html[data-theme=light] .payment-state{color:#b69a52}
+html[data-theme=light] .payment-state.paid{color:#7da650}
+html[data-theme=light] .admin-empty,html[data-theme=light] .admin-empty p{color:#92af77}
+html[data-theme=light] .admin-empty h3{color:#779b57}
+html[data-theme=light] .enquiry-detail{border-color:#d8e6c8}
+html[data-theme=light] .enquiry-detail summary{color:#6d924b}
+html[data-theme=light] .article,html[data-theme=light] .article h1,html[data-theme=light] .article h2{color:#3e542e}
+html[data-theme=light] .article p{color:#7d9566}
+html[data-theme=light] .clean-store .accessory-tabs button{background:#f2f6eb;color:#708f51;border-color:#d0e1bb}
+html[data-theme=light] .clean-store .accessory-tabs button.active{background:#dce9cc;color:#547735}
+@media(max-width:560px){.theme-toggle{width:46px;min-width:46px;height:29px;padding:0 5px!important;gap:5px}.theme-toggle svg{width:13px}.theme-toggle-thumb{width:21px;height:21px;transform:translateX(18px)}.clean-store .clean-header,.commerce-header{column-gap:10px}.header-actions{gap:8px}.clean-store .clean-header>.logo,.commerce-header>.logo{font-size:23px}.clean-store .clean-header>.logo span,.commerce-header>.logo span{font-size:25px}.header-actions .wishlist-link{padding:6px}.admin-header-actions{gap:10px}}
