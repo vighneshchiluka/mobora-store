@@ -1,3 +1,4 @@
+import {isCameraLayout} from '@/lib/phone-preview';
 import {env} from 'cloudflare:workers';
 export async function POST(request:Request){
  if(request.headers.get('origin')!==new URL(request.url).origin)return Response.json({error:'Invalid request origin.'},{status:403});
@@ -8,6 +9,6 @@ export async function POST(request:Request){
  if(!valid)return Response.json({error:'This file is not a supported image.'},{status:400});
  if(!env.BUCKET)return Response.json({error:'Artwork storage is temporarily unavailable.'},{status:503});
  const id=crypto.randomUUID();
- await env.BUCKET.put('designs/'+id,bytes,{httpMetadata:{contentType:image.type},customMetadata:{text:String(form.get('text')||'').slice(0,40),model:String(form.get('model')||'').slice(0,80),background:String(form.get('background')||'').slice(0,20)}});
+ await env.BUCKET.put('designs/'+id,bytes,{httpMetadata:{contentType:image.type},customMetadata:{text:String(form.get('text')||'').slice(0,40),model:String(form.get('model')||'').slice(0,80),background:String(form.get('background')||'').slice(0,20),cameraLayout:isCameraLayout(form.get('cameraLayout'))?String(form.get('cameraLayout')):''}});
  return Response.json({id});
 }
