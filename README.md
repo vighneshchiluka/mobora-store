@@ -22,3 +22,9 @@ Preview is illustrative and uses centred cropping; camera placement varies by mo
 ## Clean storefront update
 
 The homepage and /mobile-cover use a centred, searchable brand/model accordion. /accessories is a dedicated catalogue for grips, cables, chargers and screen protectors. Both catalogues have min/max prices, budget presets, category/type, colour, sort and search controls. Accessories also filter by device compatibility. Mobile filters collapse with a Show products button. The selected phone carries between pages in session storage; bag items persist locally. DM Sans is hosted locally with its SIL Open Font License in public/fonts/OFL.txt. The original Instagram photos remain in an expandable collection section. Paid checkout and an owner dashboard remain unimplemented as described above.
+
+## Expanded phone directory and cover studio
+
+The customisation form now uses searchable, keyboard-accessible brand and model comboboxes. Changing brand clears the previous model. The checked-in directory contains 25 brand groups and 1,363 model/case-fit options, including Redmi as its own brand. Model names come from the public reference directory with three historic OnePlus additions verified against official OnePlus pages; provenance and retrieval date are in lib/phone-models.sources.json. Listing a model does not confirm MOBORA stock or fit. To refresh, run `node scripts/update-model-directory.mjs` with network access; it validates the source shape before replacing the directory. A saved HTML snapshot path may be passed as an argument instead.
+
+The studio uses larger, lighter DM Sans typography, numbered sections, a compact sticky preview and save area. Visible document/dialog/list scrollbars are hidden while wheel, touch and keyboard scrolling remain available. Brand and model menus support search, arrows, Enter, Escape and Tab.
