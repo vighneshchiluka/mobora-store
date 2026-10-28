@@ -1,6 +1,7 @@
 'use client';
 import {useEffect,useState} from 'react';
-import {Heart,UserRound} from 'lucide-react';
+import {Heart} from 'lucide-react';
+import HeaderAccount from './header-account';
 import Link from '@/components/site-link';
 import ThemeToggle from './theme-toggle';
 import {products} from '@/lib/catalog';
@@ -10,4 +11,4 @@ function publish(next:string[]){ids=[...new Set(next)];try{localStorage.setItem(
 async function start(){if(started)return;started=true;publish(read());try{const r=await fetch('/api/wishlist');const b=await r.json() as any;signedIn=b.signedIn;if(signedIn){const local=read();const response=await fetch('/api/wishlist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'add',ids:local})});if(response.ok)publish([...local,...b.ids])}}catch{}}
 export function useWishlist(){const [value,setValue]=useState<string[]>([]),[error,setError]=useState('');useEffect(()=>{const update=()=>setValue([...ids]);window.addEventListener('mobora-wishlist',update);void start();update();return()=>window.removeEventListener('mobora-wishlist',update)},[]);async function toggle(id:string){setError('');const before=[...ids],remove=ids.includes(id);publish(remove?ids.filter(x=>x!==id):[...ids,id]);if(signedIn)try{const r=await fetch('/api/wishlist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:remove?'remove':'add',ids:[id]})});if(!r.ok)throw Error();}catch{publish(before);setError('Could not sync wishlist. Please try again.')}}return {ids:value,toggle,error}}
 export function HeartButton({id}:{id:string}){const wish=useWishlist();return <button className={'wish-heart '+(wish.ids.includes(id)?'is-saved':'')} aria-label={(wish.ids.includes(id)?'Remove from':'Add to')+' wishlist: '+products.find(p=>p.id===id)?.name} aria-pressed={wish.ids.includes(id)} onClick={()=>void wish.toggle(id)}><Heart size={19} fill={wish.ids.includes(id)?'currentColor':'none'}/>{wish.error&&<span className="sr-only" role="alert">{wish.error}</span>}</button>}
-export function CommerceActions(){const wish=useWishlist();const [signed,setSigned]=useState(false);useEffect(()=>{fetch('/api/account').then(r=>r.json()).then((b:any)=>setSigned(!!b.user)).catch(()=>{})},[]);return <><ThemeToggle/><Link className="wishlist-link" href="/wishlist"><Heart size={19}/><span>Wishlist{wish.ids.length?' ('+wish.ids.length+')':''}</span></Link><Link className="account-link" href="/account"><UserRound size={19}/><span>{signed?'My account':'Sign in / register'}</span></Link></>}
+export function CommerceActions(){const wish=useWishlist();return <><ThemeToggle/><Link className="wishlist-link" href="/wishlist"><Heart size={19}/><span>Wishlist{wish.ids.length?' ('+wish.ids.length+')':''}</span></Link><HeaderAccount/></>}

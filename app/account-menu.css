@@ -1,0 +1,14 @@
+.header-account{position:relative;flex-shrink:0}
+.header-account>summary{display:flex;align-items:center;gap:8px;padding:10px 12px;min-height:44px;border:1px solid var(--line);border-radius:9px;cursor:pointer;list-style:none;font-size:14px;color:var(--ink)}
+.header-account>summary::-webkit-details-marker{display:none}
+.header-account>summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.header-username{display:block;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.header-account[open]>summary>svg:last-child{transform:rotate(180deg)}
+.header-account-dropdown{position:absolute;right:0;top:calc(100% + 9px);width:240px;max-width:calc(100vw - 28px);padding:9px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 35px #0004;z-index:100}
+.header-account-caption{display:block;padding:9px 11px 12px;color:var(--muted);font-size:12px;border-bottom:1px solid var(--line);margin-bottom:5px;overflow-wrap:anywhere}
+.header-account-caption b{display:block;font-size:15px;color:var(--ink);font-weight:500;margin-top:4px}
+.header-actions .header-account-dropdown a,.header-actions .header-account-dropdown button{display:flex;align-items:center;gap:9px;width:100%;padding:11px;border-radius:7px;font-size:14px;color:var(--ink);white-space:normal;text-align:left}
+.header-actions .header-account-dropdown a:hover,.header-actions .header-account-dropdown a:focus-visible,.header-actions .header-account-dropdown button:hover,.header-actions .header-account-dropdown button:focus-visible{background:var(--surface);outline:1px solid var(--line)}
+.header-actions .header-account-dropdown .header-signout{border-top:1px solid var(--line);border-radius:0;margin-top:5px;padding-top:14px}
+.signout-error{display:block;padding:7px 11px;color:#bc563e;font-size:12px;line-height:1.45}
+@media(max-width:560px){.header-account>summary{padding:8px;gap:5px;font-size:13px}.header-username{max-width:100px}}

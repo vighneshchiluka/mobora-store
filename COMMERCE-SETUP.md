@@ -1,6 +1,6 @@
 # MOBORA commerce
 
-The published storefront remains owner-private. Customer sign-in uses the Sites platform’s ChatGPT sign-in; MOBORA registration then saves name and mobile number in D1. No passwords are stored. The configured admin is **moboraaccessories@gmail.com**; sign in with that email at `/admin`. All dashboard APIs check the admin allowlist on the server.
+The published storefront remains owner-private. Customer sign-in uses the Sites platform’s ChatGPT sign-in; MOBORA registration then saves the customer email, name and mobile number in D1. Signing out clears the saved local customer profile and wishlist while completed orders remain available for fulfilment. No passwords are stored. The configured admin is **hitmusicvibes25@gmail.com**; sign in with that email at `/admin`. All dashboard APIs check the admin allowlist on the server.
 
 ## Payment connection
 
@@ -35,6 +35,6 @@ The dashboard shows the latest 100 orders, profiles and legacy enquiries. It pro
 
 Schema migrations in `drizzle/` create customer, wishlist, order and event tables. Production migrations are applied by Sites publication. Preview state is separate and is never deployed.
 
-Run `node tests/commerce-api.mjs` against the local preview with no local admin allowlist first. It validates auth, origin protection, server pricing, retry idempotency, wishlist persistence, artwork requirements and payment gating. Then use an ignored local `.dev.vars` containing `ADMIN_EMAILS="seedy@sites.test"`, restart preview, and run `node tests/admin-api.mjs`. Local mock identity is provided by the existing Sites preview plugin only; it is absent in production. All sample records remain local.
+Run `node tests/commerce-api.mjs` against the local preview with no local admin allowlist first. It validates auth, origin protection, server pricing, retry idempotency, wishlist persistence, artwork requirements and payment gating. The local preview is set to the MOBORA admin test identity `hitmusicvibes25@gmail.com`; the ignored local `.dev.vars` uses the same value for `ADMIN_EMAILS`. Restart the preview after changing either setting, then run `node tests/admin-api.mjs`. Local mock identity is provided by the existing Sites preview plugin only; it is absent in production. All sample records remain local.
 
 Original vector artwork for Coffee & Little Joys, Somewhere With You and Midnight Botanica is included in `public/designs/`. Illustrations are previews; manufacturing cutout templates still require supplier verification.
